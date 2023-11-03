@@ -1,7 +1,7 @@
 from sys import path
-path.append("/home/karim/TSDI/tp_TSDI_PY")
+#äpath.append("/home/karim/TSDI/tp_TSDI_PY")
 import pickle
-from users.user import User
+from user import User
 
 
 class Etablissement(User):
@@ -55,12 +55,16 @@ class Etablissement(User):
         self.__users = users
 
     def ajouter(self, user: User):
-        self.__users.append(user)
+        if not self.exist(user.getLogin()):
+            self.__users.append(user)
+        else :
+            raise Exception ("Ce login deja utilise !!")    
+        
 
     def exist(self, login: User):
         ex = False
         for user in self.__users:
-            if User.getLogin() == login:
+            if user.getLogin() == login:
                 ex = True
                 break
         return ex

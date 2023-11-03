@@ -1,5 +1,5 @@
 import tkinter as tk
-from users.etablissement import Etablissement
+from etablissement import Etablissement
 
 
 class FormAuth:

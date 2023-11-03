@@ -1,9 +1,20 @@
 from sys import path
-path.append("/home/karim/TSDI/tp_TSDI_PY")
+#path.append("/home/karim/TSDI/tp_TSDI_PY")
 
 import tkinter as tk
-from view.form_auth import FormAuth
+from form_auth import FormAuth
 FormAuth()
+
+
+# from etablissement import Etablissement
+# from stagire import Stagire
+# from formateur import Formateur
+# from admin import Admin
+# e=Etablissement("espigic", "lot nassr", "999", "kkjkj")
+# e.ajouter(Stagire("888", "stagiaire", "123"))
+# e.ajouter(Formateur("889", "formateur", "123"))
+# e.ajouter(Admin("admin", "123"))
+# e.save()
 
 
 

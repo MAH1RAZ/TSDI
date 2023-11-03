@@ -1,6 +1,8 @@
-from forms.form_stagire import FormStagire
+from sys import path
+#ath.append("/home/karim/TSDI/tp_TSDI_PY")
+from form_stagire import FormStagire
 import tkinter as tk
-from forms.form_stagire import GestionStagire
+from form_gestion_stagire import GestionStagire
 
 
 class FormAdmin:
@@ -8,8 +10,7 @@ class FormAdmin:
         self.root = tk.Tk()
         self.root.geometry("500x500")
         self.root.title("admin")
-        self.btnGestStagire = tk.Button(
-            self.root, text="Gestion de stagire", width=20, command=self.Geststagire)
+        self.btnGestStagire = tk.Button(self.root, text="Gestion de stagire", width=20, command=self.Geststagire)
         self.btnGestStagire.pack(pady=55)
         self.btnGestFormateur = tk.Button(
             self.root, text="Gestion de Formateur", width=20)

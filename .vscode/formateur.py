@@ -1,5 +1,5 @@
 from user import User
-from view.form_formateur import FormFormateur
+from form_formateur import FormFormateur
 
 
 class Formateur(User):
